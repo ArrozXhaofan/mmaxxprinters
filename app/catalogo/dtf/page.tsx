@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import React from 'react'
 
-function Dtf() {
+async function Dtf() {
+
+  const dota = await getDatos()
 
   return (
     <div>Dtf
 
       <p>
-
+        
       
       </p>
 
@@ -16,3 +18,9 @@ function Dtf() {
 }
 
 export default Dtf
+
+export async function getDatos() {
+  
+  return await fetch('https://jsonplaceholder.typicode.com/todos/')
+  .then(res => res.json())
+}

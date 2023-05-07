@@ -1,6 +1,6 @@
 import React from "react";
 
-export async function hola(id: string) {
+export async function fetchDatos(id: string) {
   console.log("es to es ntees");
 
   return await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then(
@@ -9,7 +9,7 @@ export async function hola(id: string) {
 }
 
 async function Dtfid({ params }: { params: { id: string } }) {
-  const palatras = await hola(params.id);
+  const palatras = await fetchDatos(params.id);
 
   console.log(palatras);
 
