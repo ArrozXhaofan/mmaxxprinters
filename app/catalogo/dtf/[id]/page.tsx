@@ -1,4 +1,10 @@
-import React from "react";
+
+async function fetchDatos(id: string) {
+
+  return await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then(
+    (res) => res.json()
+  );
+}
 
 
 async function Dtfid({ params }: { params: { id: string } }) {
@@ -11,9 +17,3 @@ async function Dtfid({ params }: { params: { id: string } }) {
 
 export default Dtfid;
 
-export async function fetchDatos(id: string) {
-
-  return await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then(
-    (res) => res.json()
-  );
-}
