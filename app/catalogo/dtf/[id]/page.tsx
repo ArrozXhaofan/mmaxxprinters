@@ -1,10 +1,19 @@
-import React from 'react'
+import React from "react";
 
-function Dtfid({params}:{params:{id:string}}) {
+export async function hola(id: string) {
+  console.log("es to es ntees");
 
-  return (
-    <div>ID: {params.id} </div>
-  )
+  return await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then(
+    (res) => res.json()
+  );
 }
 
-export default Dtfid
+async function Dtfid({ params }: { params: { id: string } }) {
+  const palatras = await hola(params.id);
+
+  console.log(palatras);
+
+  return <div>ID: {JSON.stringify(palatras)} </div>;
+}
+
+export default Dtfid;
