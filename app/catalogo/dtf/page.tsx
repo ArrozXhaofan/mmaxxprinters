@@ -10,6 +10,9 @@ async function Dtf() {
 
       <p>
         
+        {
+          JSON.stringify(dota)
+        }
       
       </p>
 
@@ -19,7 +22,7 @@ async function Dtf() {
 
 export default Dtf
 
-export async function getDatos() {
+ async function getDatos() {
   
   return await fetch('https://jsonplaceholder.typicode.com/todos/')
   .then(res => res.json())
