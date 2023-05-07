@@ -19,6 +19,9 @@ async function Dtf() {
       {dota.map((dot: any) => (
           
           <li key={dot.id}>
+            <Link href={'catalogo/dtf/'+ dot.id}>
+              this is a link
+            </Link>
             {dot.id}
           </li>
         ))}
