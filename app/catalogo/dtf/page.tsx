@@ -11,7 +11,6 @@ async function getDatos() {
 async function Dtf() {
   const dota = await getDatos();
 
-  console.log(dota);
 
   return (
     <div>
@@ -20,7 +19,7 @@ async function Dtf() {
       {dota.map((dot: any) => (
           
           <li key={dot.id}>
-            <Link href={`dtf/${dot.id}`}>{dot.title}</Link>
+            {dot.id}
           </li>
         ))}
       </ul>
