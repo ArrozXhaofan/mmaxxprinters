@@ -13,8 +13,8 @@ async function Sublimacionid({params}:{params:{id:string}}) {
   return (
     <div className='max-w-6xl w-full pt-5 overflow-hidden'>
 
-        <Image width={100} height={100} src={maquina.IMAGEN} alt="Printert imaf" />
-        <p>{maquina.MODELO}</p>
+        <Image width={100} height={100} src={maquina.imagen} alt="Printert imaf" />
+        <p>{maquina.modelo}</p>
       
 
     </div>
