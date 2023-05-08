@@ -1,5 +1,6 @@
 export interface Maquina {
-  ID: number;
-  MODELO: string;
-  IMAGEN: string;
+  id: number;
+  modelo: string;
+  imagen: string;
+  categoria: string;
 }

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Maquina } from "../models"
 import Link from "next/link";
+import { Card } from "@/components";
 
 async function fetchSublimadoras():Promise<Maquina[]> {
   return await fetch('https://apimaxv2.apexmaicol.online/VPsublimacion/',
@@ -24,15 +25,9 @@ async function Sublimacion() {
       </h1>
 
       <div>
-        {
-          maquinas.map(maquina => (
-            <Link href={`catalogo/sublimacion/${maquina.ID}`} key={maquina.ID}>
-              <p>{maquina.ID}</p>
-              <p>{maquina.MODELO}</p>
-              <Image alt="Printer" src={maquina.IMAGEN} width={100} height={100} />
-            </Link>
-          ))
-        }
+        
+        <Card data={maquinas} />
+        
       </div>
 
     </div>

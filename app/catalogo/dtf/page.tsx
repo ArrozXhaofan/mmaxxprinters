@@ -1,30 +1,24 @@
-import Link from "next/link";
+import { Card } from "@/components";
 import React from "react";
 
 async function getDatos() {
-  return await fetch("https://jsonplaceholder.typicode.com/todos/").then(
+  return await fetch("https://apimaxv2.apexmaicol.online/VPuv/").then(
     (res) => res.json()
   );
 }
 
 
 async function Dtf() {
-  const dota = await getDatos();
+  const maquinas = await getDatos();
 
 
   return (
     <div>
       <h1>DTF</h1>
       <ul>
-      {dota.map((dot: any) => (
-          
-          <li key={dot.id}>
-            <Link href={'catalogo/dtf/'+ dot.id}>
-              this is a link
-            </Link>
-            {dot.id}
-          </li>
-        ))}
+
+        <Card data={maquinas} />
+
       </ul>
        
       
