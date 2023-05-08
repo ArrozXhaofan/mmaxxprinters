@@ -1,6 +1,12 @@
+"use client"
+
+import { Foo, Nav } from '@/components'
 import './globals.css'
+import { Rutas } from '@/models'
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,19 +18,24 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  useEffect(()=>{
+    AOS.init();
+  },[])
+
   return (
     <html lang="en">
-      
-      <body className='bg-gray-900 text-white'>
 
+      <body className='bg-gray-900 text-white relative min-h-screen
+        font-monse overflow-hidden'>
+
+      <Nav  pathNames={[Rutas.HOME, Rutas.CATALOGO, Rutas.CONTACTO]} />
+
+        <div className=' py-14'>
+          {children}
+        </div>
         
-        
-
-        <p>Esto es un texto</p>
-
-        {children}
-
-        <p>Esto es un texto2</p>
+        <Foo/>
       
       </body>
     </html>
