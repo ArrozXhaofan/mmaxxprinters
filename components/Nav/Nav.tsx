@@ -11,7 +11,7 @@ function Nav({pathNames}:Props) {
   return (
     <nav data-aos="fade-left" 
     className='fixed w-full h-14 bg-white bg-opacity-75 flex items-center justify-between pr-4
-    backdrop-blur-sm shadow-lg'>
+    backdrop-blur-sm shadow-lg z-50'>
         
         <div className=''>
             <Image className='h-10 object-contain' priority

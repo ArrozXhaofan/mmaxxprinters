@@ -14,24 +14,28 @@ function Catalogo() {
         <Link href={'catalogo/sublimacion'} 
         className="h-1/3 border border-primary flex flex-col items-center justify-center gap-7 p-5
         xl:w-full bg-opacity-75 backdrop-blur-sm
+        group
         hover:scale-125 hover:rounded-xl hover:z-20 duration-200 ease-in-out">
-            <Image src={PrinterTest} width={200} height={100} alt="Printer img" />
+            <Image src={PrinterTest} width={200} height={100} alt="Printer img"
+            className="group-hover:-translate-y-10 duration-300" />
             <p className="text-xl text-primary">SUBLIMACION</p>
         </Link>
 
         <Link href={'catalogo/dtf'} 
         className="h-1/3 border border-primary flex flex-col items-center justify-center gap-7 p-5
-        xl:w-full bg-opacity-75 backdrop-blur-sm
+        xl:w-full bg-opacity-75 backdrop-blur-sm group
         hover:scale-125 hover:rounded-xl hover:z-20 duration-200 ease-in-out">
-            <Image src={PrinterTest} width={200} height={100} alt="Printer img" />
+            <Image src={PrinterTest} width={200} height={100} alt="Printer img"
+            className="group-hover:-translate-y-10 duration-300" />
             <p className="text-xl text-primary">DTF</p>
         </Link>
 
         <Link href={'catalogo/ecosolvente'} 
         className="h-1/3 border border-primary flex flex-col items-center justify-center gap-7 p-5
-        xl:w-full bg-opacity-75 backdrop-blur-sm
+        xl:w-full bg-opacity-75 backdrop-blur-sm group
         hover:scale-125 hover:rounded-xl hover:z-20 duration-200 ease-in-out">
-            <Image src={PrinterTest} width={200} height={100} alt="Printer img" />
+            <Image src={PrinterTest} width={200} height={100} alt="Printer img"
+            className="group-hover:-translate-y-10 duration-300" />
             <p className="text-xl text-primary">ECOSOLVENTE</p>
         </Link>
 
