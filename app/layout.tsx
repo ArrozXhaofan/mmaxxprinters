@@ -1,12 +1,6 @@
-"use client"
-
 import { Foo, Nav } from '@/components'
 import './globals.css'
 import { Rutas } from '@/models'
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 export const metadata = {
   title: 'Create Next App',
@@ -19,9 +13,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  useEffect(()=>{
-    AOS.init();
-  },[])
 
   return (
     <html lang="en">
