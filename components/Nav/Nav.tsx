@@ -14,8 +14,8 @@ function Nav({pathNames}:Props) {
     backdrop-blur-sm shadow-lg z-50'>
         
         <div className=''>
-            <Image className='h-10 object-contain' priority
-            src={Logo} width={100} height={75} alt='Logo de max' />
+            <Image className='h-10 object-contain' priority width={100} height={100}
+            src={Logo} alt='Logo de max' />
         </div>
 
         <div className='flex items-center gap-3 text-black text-sm'>

@@ -1,8 +1,23 @@
-import React from 'react'
+import Image from "next/image"
+import { Maquina } from "../../models"
 
-function Sublimacionid() {
+async function getSublimacion(id:string):Promise<Maquina> {
+  return fetch(`https://apimaxv2.apexmaicol.online/VPsublimacion/${id}`,{next:{revalidate:60}})
+  .then(res => res.json())
+}
+
+async function Sublimacionid({params}:{params:{id:string}}) {
+
+  const maquina = await getSublimacion(params.id)
+
   return (
-    <div>sublimacion 1</div>
+    <div className='max-w-6xl w-full pt-5 overflow-hidden'>
+
+        <Image width={100} height={100} src={maquina.IMAGEN} alt="Printert imaf" />
+        <p>{maquina.MODELO}</p>
+      
+
+    </div>
   )
 }
 
