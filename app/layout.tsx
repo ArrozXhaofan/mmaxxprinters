@@ -17,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className='bg-gray-900 text-white relative min-h-screen
-        font-monse overflow-hidden'>
+      <body className='relative min-h-screen
+        font-monse'>
 
       <Nav  pathNames={[Rutas.HOME, Rutas.CATALOGO, Rutas.CONTACTO]} />
 

@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       fontFamily:{
         monse: ['Montserrat']
+      },
+      colors:{
+        primary:'#F07E26'
       }
     },
   },

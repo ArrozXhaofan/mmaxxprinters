@@ -10,7 +10,8 @@ interface Props{
 function Nav({pathNames}:Props) {
   return (
     <nav data-aos="fade-left" 
-    className='fixed w-full h-14 bg-white bg-opacity-75 flex items-center justify-between pr-4'>
+    className='fixed w-full h-14 bg-white bg-opacity-75 flex items-center justify-between pr-4
+    backdrop-blur-sm shadow-lg xl:justify-around'>
         
         <div className=''>
             <Image className='h-10 object-contain' priority
@@ -20,7 +21,8 @@ function Nav({pathNames}:Props) {
         <div className='flex items-center gap-3 text-black text-sm'>
             {
                 pathNames.map(pathName => (
-                    <Link key={pathName.path} href={pathName.path}>
+                    <Link className='hover:scale-110 hover:text-primary duration-300 '
+                    key={pathName.path} href={pathName.path}>
                         {pathName.name}
                     </Link>
                 ))

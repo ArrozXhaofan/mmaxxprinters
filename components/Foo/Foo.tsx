@@ -2,10 +2,10 @@ import React from "react";
 
 function Foo() {
   return (
-    <footer className="w-screen bg-red-600">
+    <footer className="w-screen text-white">
 
       <div
-      className="bg-black w-full h-14 absolute bottom-0 flex items-center justify-center overflow-hidden">
+      className="bg-black w-full h-14 absolute bottom-0 flex items-center justify-center overflow-y-scroll">
 
         <p className="font-thin">
           © MMAX copyright © all rights reserved

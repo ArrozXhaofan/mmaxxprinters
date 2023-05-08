@@ -10,7 +10,7 @@ async function fetchDatos(id: string) {
 async function Dtfid({ params }: { params: { id: string } }) {
   const palatras = await fetchDatos(params.id);
 
-  console.log(palatras);
+
 
   return <div>ID: {JSON.stringify(palatras)} </div>;
 }
