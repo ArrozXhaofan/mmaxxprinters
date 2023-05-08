@@ -22,7 +22,7 @@ export default function RootLayout({
 
       <Nav  pathNames={[Rutas.HOME, Rutas.CATALOGO, Rutas.CONTACTO]} />
 
-        <div className=' py-14'>
+        <div className=' py-14 h-full flex justify-center items-center'>
           {children}
         </div>
         

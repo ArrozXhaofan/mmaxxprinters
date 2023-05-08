@@ -7,7 +7,7 @@ function Foo() {
       <div
       className="bg-black w-full h-14 absolute bottom-0 flex items-center justify-center overflow-y-scroll">
 
-        <p className="font-thin">
+        <p className="font-thin text-center">
           © MMAX copyright © all rights reserved
         </p>
 
