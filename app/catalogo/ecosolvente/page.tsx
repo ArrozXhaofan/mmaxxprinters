@@ -1,5 +1,6 @@
 import { Card } from "@/components"
 import { Maquina } from "../models"
+import { url } from "inspector"
 
 async function getEcosolventes():Promise<Maquina[]> {
   return fetch('https://apimaxv2.apexmaicol.online/VPuv/',{next:{revalidate:30}})

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        domains:['www.ghost-white-toner.com']
+        domains:['maxv2.apexmaicol.online']
     }
 }
 
