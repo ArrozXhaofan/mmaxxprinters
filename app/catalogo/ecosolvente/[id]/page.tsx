@@ -42,7 +42,7 @@ async function Ecosolventeid({ params }: { params: { id: string } }) {
           <thead className="text-primary text-lg">
             <tr>
               {headas.map((pass) => (
-                <td>{pass} PASS</td>
+                <td key={pass}>{pass} PASS</td>
               ))}
             </tr>
           </thead>
@@ -50,7 +50,7 @@ async function Ecosolventeid({ params }: { params: { id: string } }) {
           <tbody>
             <tr>
               {passes.map((pass) => (
-                <td>{pass} m2/h</td>
+                <td key={pass}>{pass} m2/h</td>
               ))}
             </tr>
           </tbody>
