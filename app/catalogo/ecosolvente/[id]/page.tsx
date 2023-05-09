@@ -94,7 +94,7 @@ async function Ecosolventeid({ params }: { params: { id: string } }) {
         <div className="flex justify-center items-center gap-3 flex-wrap">
         {
           maquina.SUPERFICIE.map(iconos => (
-            <Icono data={iconos} />
+            <Icono key={iconos.material} data={iconos} />
           ))
         }
         </div>
