@@ -23,7 +23,7 @@ async function Sublimacion() {
         
        {
         maquinas.map(maquina => (
-          <Card data={maquina} />
+          <Card key={maquina.id} data={maquina} />
         ))
        }
         
