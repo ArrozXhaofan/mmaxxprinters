@@ -14,7 +14,7 @@ interface Props{
     <div >
         <p>{data.modelo}</p>
         <Image src={data.imagen} width={300} height={150} alt="Printer" />
-        <Link href={`${categoria}/${data.id}`}>
+        <Link href={`catalogo/${categoria}/${data.id}`}>
             Ver mas
         </Link>
     </div>
