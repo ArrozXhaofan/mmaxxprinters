@@ -1,27 +1,35 @@
+import { Maquina } from "../models"
 import { Card } from "@/components";
-import React from "react";
 
-async function getDatos() {
-  return await fetch("https://apimaxv2.apexmaicol.online/VPuv/").then(
+async function getDatos():Promise<Maquina[]> {
+  return await fetch("https://apimaxv2.apexmaicol.online/VPdtf/",{next:{revalidate:30}}).then(
     (res) => res.json()
   );
 }
 
 
 async function Dtf() {
+
   const maquinas = await getDatos();
 
 
   return (
-    <div>
-      <h1>DTF</h1>
-      <ul>
+    <div className='max-w-6xl w-full pt-5 '>
+        
+      <h1 className='text-primary font-semibold text-2xl pl-3'>
+        SUBLIMADORAS
+      </h1>
 
-        <Card data={maquinas} />
+      <div>
+        
+       {
+        maquinas.map(maquina => (
+          <Card key={maquina.id} data={maquina} />
+        ))
+       }
+        
+      </div>
 
-      </ul>
-       
-      
     </div>
   );
 }
