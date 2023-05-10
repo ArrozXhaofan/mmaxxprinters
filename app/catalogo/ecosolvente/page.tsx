@@ -12,7 +12,7 @@ async function Ecosolvente() {
 
   return (
     <div>
-        <Card data={maquinas} />
+     
     </div>
   )
 }
