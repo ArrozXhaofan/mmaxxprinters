@@ -17,7 +17,7 @@ function Catalogo() {
         
         {
           Catacartas.map(cataCarta => (
-            <CataCard data={cataCarta} />
+            <CataCard key={cataCarta.id} data={cataCarta} />
           ))
         }
 
