@@ -92,7 +92,7 @@ async function Sublimacionid({params}:{params:{id:string}}) {
     <div className="py-20">
       <h3 className="text-xl md:text-3xl  font-semibold text-primary pb-3">SUPERFICIE DE IMPRESIÓN</h3>
       
-      <div className="flex justify-center items-center gap-3 flex-wrap">
+      <div className="flex justify-center items-center gap-7 flex-wrap pt-10">
         {
           maquina.SUPERFICIE === null ? (
             <p>Aun no hay informacion disponible</p>
