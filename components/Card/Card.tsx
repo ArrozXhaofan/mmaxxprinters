@@ -3,27 +3,20 @@ import Image from "next/image"
 import Link from "next/link"
 
 interface Props{
-    data: Maquina[]
+    data: Maquina
 }
+ 
+ function Card({data}:Props) {
 
-function Card({data}:Props) {
+  const categoria = data.categoria ? data.categoria.toLowerCase() : '';
 
   return (
-    <div>
-        <ul>
-        {
-            data.map(maquina => (
-                <li key={maquina.id}>
-                    <p>{maquina.modelo}</p>
-                    <Image src={maquina.imagen} width={100} height={100} alt="printer" />
-                    <Link href={`catalogo/${maquina.categoria.toLowerCase()}/${maquina.id}`}>
-                        Ver mas
-                    </Link>
-                </li>
-            ))
-        }
-        </ul>
-        
+    <div >
+        <p>{data.modelo}</p>
+        <Image src={data.imagen} width={300} height={150} alt="Printer" />
+        <Link href={`${categoria}/${data.id}`}>
+            Ver mas
+        </Link>
     </div>
   )
 }

@@ -1,6 +1,4 @@
-import Image from "next/image"
 import { Maquina } from "../models"
-import Link from "next/link";
 import { Card } from "@/components";
 
 async function fetchSublimadoras():Promise<Maquina[]> {
@@ -13,9 +11,6 @@ async function Sublimacion() {
 
   const maquinas = await fetchSublimadoras()
 
-  
-  console.log(maquinas);
-  
 
   return (
     <div className='max-w-6xl w-full pt-5 '>
@@ -26,7 +21,11 @@ async function Sublimacion() {
 
       <div>
         
-        <Card data={maquinas} />
+       {
+        maquinas.map(maquina => (
+          <Card data={maquina} />
+        ))
+       }
         
       </div>
 
