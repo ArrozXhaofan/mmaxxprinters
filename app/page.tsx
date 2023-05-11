@@ -22,11 +22,14 @@ export default function Home() {
 
       <div>
         <div className="md:hidden">
-        <Image src={bannersm} alt="mmaxx printers banner1" />
+        <Image src={bannersm} alt="mmaxx printers banner1"
+          priority={true}
+           />
         </div>
         
         <div className="hidden md:block">
-          <Image src={bannerlg} alt="mmaxx printers banner1" />
+          <Image src={bannerlg} alt="mmaxx printers banner1"
+          priority={true} />
         </div>
         
       </div>
@@ -47,7 +50,8 @@ export default function Home() {
       {/* GRID START */}
       <div className="grid md:grid-cols-2 py-10">
         <div>
-          <Image src={grid1} alt="Max printer" />
+          <Image src={grid1} alt="Max printer"
+           placeholder="blur" />
         </div>
 
         <div className="fles justify-center items-center text-white p-10">
@@ -67,7 +71,8 @@ export default function Home() {
           <span className="absolute text-2xl md:text-5xl text-center lg:text-6xl xl:text-7xl">
             CONFIANZA Y EFECTIVIDAD
           </span>
-          <Image src={grid2} alt="Max local" />
+          <Image src={grid2} alt="Max local"
+           placeholder="blur" />
         </div>
 
         <div className="flex justify-center items-center p-6 bg-black text-white">
@@ -80,7 +85,8 @@ export default function Home() {
         </div>
 
         <div className="bg-white flex justify-center items-center gap-4 p-8 flex-col">
-          <Image src={grid3} alt="DTF mmaxx printers" />
+          <Image src={grid3} alt="DTF mmaxx printers"
+            placeholder="blur"/>
           <span className="bg-primary text-xl px-8 py-1 rounded-2xl text-center">
             5 AÑOS DE GARANTIA
           </span>
@@ -90,7 +96,8 @@ export default function Home() {
           <span className="absolute text-white text-4xl text-center font-smibold">
             AMPLIA EXPERIENCIA
           </span>
-          <Image src={grid4} alt="Max amplia experiencia" />
+          <Image src={grid4} alt="Max amplia experiencia"
+            placeholder="blur" />
         </div>
 
         <div className="p-6 flex justify-center items-center">
