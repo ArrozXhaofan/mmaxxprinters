@@ -6,7 +6,7 @@ function Contacto() {
   return (
     <div className="">
       <div>
-        <h1 className="text-center text-3xl md:text-6xl font-semibold py-2">
+        <h1 className="text-center text-3xl md:text-6xl font-semibold pt-10">
           CONTACTO
         </h1>
       </div>
@@ -37,11 +37,13 @@ function Contacto() {
               <hr className="border border-black" />
 
               <div className="flex items-center justify-center py-2 text-5xl gap-x-20">
-                <a href="">
+                <a href="https://www.facebook.com/MmaxxPrinters" target="_blank"
+                className="hover:scale-105 hover:text-blue-500 duration-300">
                   <FaFacebook />
                 </a>
 
-                <a href="">
+                <a href="https://www.instagram.com/mmaxxprinters/" target="_blank"
+                 className="hover:scale-105 hover:text-pink-600 duration-300">
                   <BsInstagram />
                 </a>
               </div>
