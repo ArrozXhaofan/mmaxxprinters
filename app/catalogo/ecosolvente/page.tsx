@@ -17,7 +17,7 @@ async function Ecosolvente() {
       ECOSOLVENTES
     </h1>
 
-    <div>
+    <div className="flex flex-col md:flex-row justify-center items-center gap-10 pt-10 flex-wrap">
       
      {
       maquinas.map(maquina => (
