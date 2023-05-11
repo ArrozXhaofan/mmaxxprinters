@@ -54,7 +54,7 @@ export default function Home() {
            placeholder="blur" />
         </div>
 
-        <div data-aos="fade-down-left" 
+        <div data-aos="fade-down-left" data-aos-delay="300" data-aos-duration="1000"
         className="fles justify-center items-center text-white p-10">
           <div className="text-end flex flex-col justify-center">
             <span className="text-5xl lg:text-6xl xl:text-7xl">MMAXX</span>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div data-aos="zoom-in-up" 
+        <div data-aos="zoom-in-up" data-aos-duration="1000"
         className="md:col-span-2 relative flex items-center justify-center text-white">
           <span className="absolute text-2xl md:text-5xl text-center lg:text-6xl xl:text-7xl">
             CONFIANZA Y EFECTIVIDAD
@@ -77,7 +77,7 @@ export default function Home() {
            placeholder="blur" />
         </div>
 
-        <div data-aos="fade-down-right" 
+        <div data-aos="fade-down-right" data-aos-duration="1000"
         className="flex justify-center items-center p-6 bg-black text-white">
           <p className="text-lg leading-6 lg:text-2xl">
             Gran variedad de equipos e insumos para que puedas fortalecer o
@@ -87,7 +87,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div data-aos="fade-down-left"
+        <div data-aos="fade-down-left" data-aos-duration="1000"
          className="bg-white flex justify-center items-center gap-4 p-8 flex-col">
           <Image src={grid3} alt="DTF mmaxx printers"
             placeholder="blur"/>
@@ -98,14 +98,15 @@ export default function Home() {
 
         <div 
          className="flex justify-center items-center relative">
-          <span className="absolute text-white text-4xl text-center font-smibold">
+          <span data-aos="fade-down-left" data-aos-duration="1000" 
+          className="absolute text-white text-4xl text-center font-smibold">
             AMPLIA EXPERIENCIA
           </span>
           <Image src={grid4} alt="Max amplia experiencia"
             placeholder="blur" />
         </div>
 
-        <div data-aos="fade-left"
+        <div data-aos="fade-left" data-aos-duration="1000"
          className="p-6 flex justify-center items-center">
           <p className="text-center font-thin text-white text-xl leading-6 lg:text-2xl">
             Además de su conocimiento técnico, nuestros técnicos de máquinas

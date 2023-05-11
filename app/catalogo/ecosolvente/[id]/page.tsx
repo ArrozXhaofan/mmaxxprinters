@@ -1,6 +1,8 @@
+
 import Image from "next/image";
 import { Maquina2 } from "../../models";
 import { Icono } from "@/components";
+
 
 async function getMaquinas(id: string): Promise<Maquina2> {
   return await fetch(`https://apimaxv2.apexmaicol.online/VPecosolvente/${id}`, {
@@ -15,8 +17,10 @@ async function Ecosolventeid({ params }: { params: { id: string } })
   const headas = await maquina.VELOCIDAD.map((pass) => pass.pass);
   const passes = await maquina.VELOCIDAD.map((pass) => pass.Velocidad);
 
+
+
   return (
-    <div className="text-base md:text-lg">
+    <div className="text-base md:text-lg  px-4">
     <div className="pt-6">
       <h1 className="text-2xl md:text-4xl font-semibold text-primary">
         {`${maquina.MODELO} - ${maquina.CATEGORIA}`}
