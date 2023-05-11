@@ -4,7 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 
 function Contacto() {
   return (
-    <div className="">
+    <div>
       <div>
         <h1 className="text-center text-3xl md:text-6xl font-semibold pt-10">
           CONTACTO
