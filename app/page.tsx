@@ -49,12 +49,13 @@ export default function Home() {
 
       {/* GRID START */}
       <div className="grid md:grid-cols-2 py-10">
-        <div>
+        <div data-aos="fade-down-right">
           <Image src={grid1} alt="Max printer"
            placeholder="blur" />
         </div>
 
-        <div className="fles justify-center items-center text-white p-10">
+        <div data-aos="fade-down-left" 
+        className="fles justify-center items-center text-white p-10">
           <div className="text-end flex flex-col justify-center">
             <span className="text-5xl lg:text-6xl xl:text-7xl">MMAXX</span>
             <span className="text-3xl lg:text-4xl xl:text-5xl">Printers</span>
@@ -67,7 +68,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="md:col-span-2 relative flex items-center justify-center text-white">
+        <div data-aos="zoom-in-up" 
+        className="md:col-span-2 relative flex items-center justify-center text-white">
           <span className="absolute text-2xl md:text-5xl text-center lg:text-6xl xl:text-7xl">
             CONFIANZA Y EFECTIVIDAD
           </span>
@@ -75,7 +77,8 @@ export default function Home() {
            placeholder="blur" />
         </div>
 
-        <div className="flex justify-center items-center p-6 bg-black text-white">
+        <div data-aos="fade-down-right" 
+        className="flex justify-center items-center p-6 bg-black text-white">
           <p className="text-lg leading-6 lg:text-2xl">
             Gran variedad de equipos e insumos para que puedas fortalecer o
             iniciar tu negocio ahora mismo, además contamos con grandes premios
@@ -84,7 +87,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="bg-white flex justify-center items-center gap-4 p-8 flex-col">
+        <div data-aos="fade-down-left"
+         className="bg-white flex justify-center items-center gap-4 p-8 flex-col">
           <Image src={grid3} alt="DTF mmaxx printers"
             placeholder="blur"/>
           <span className="bg-primary text-xl px-8 py-1 rounded-2xl text-center">
@@ -92,7 +96,8 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="flex justify-center items-center relative">
+        <div 
+         className="flex justify-center items-center relative">
           <span className="absolute text-white text-4xl text-center font-smibold">
             AMPLIA EXPERIENCIA
           </span>
@@ -100,7 +105,8 @@ export default function Home() {
             placeholder="blur" />
         </div>
 
-        <div className="p-6 flex justify-center items-center">
+        <div data-aos="fade-left"
+         className="p-6 flex justify-center items-center">
           <p className="text-center font-thin text-white text-xl leading-6 lg:text-2xl">
             Además de su conocimiento técnico, nuestros técnicos de máquinas
             gigantográficas tienen la capacidad de solucionar problemas técnicos

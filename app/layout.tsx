@@ -21,7 +21,7 @@ export default function RootLayout({
 
           <div className="pt-14 flex justify-center items-center">
             
-            <div className="max-w-6xl min-h-screen z-40 w-full">
+            <div className="max-w-6xl min-h-screen z-40 w-full overflow-hidden">
               {children}
             </div>
 
