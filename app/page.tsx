@@ -183,7 +183,7 @@ export default function Home() {
       <div className="p-10 flex justify-center items-center">
         <Link href={'/catalogo'} 
         className="bg-black white text-white font-semibold px-8 py-2 text-md rounded-full text-center">
-          {`VER TODO EL CATALOGO >`}
+          VER TODO EL CATALOGO
         </Link>
       </div>
 

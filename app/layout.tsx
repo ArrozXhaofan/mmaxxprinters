@@ -1,7 +1,6 @@
-import { Foo, Nav } from "@/components";
+import { Foo, Nav, Bloque } from "@/components";
 import "./globals.css";
 import { Rutas } from "@/models";
-
 
 export const metadata = {
   title: "MMAXX PRINTERS",
@@ -13,23 +12,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-// bg-[url('/images/fondo.jpg')] 
+  // bg-[url('/images/fondo.jpg')]
   return (
     <html lang="es">
-      <body
-        className="relative font-monse">
+      <body className="relative font-monse">
 
         <Nav pathNames={[Rutas.HOME, Rutas.CATALOGO, Rutas.CONTACTO]} />
 
-          <div className="pt-14 flex justify-center items-center">
-            
-            <div className="max-w-6xl min-h-screen z-40 w-full overflow-hidden">
-              {children}
-            </div>
+        <div className="pt-14 flex justify-center items-center">
 
+          <div className="max-w-6xl min-h-screen z-40 w-full">
+            {children}
           </div>
-        
-         <Foo />
+        </div>
+
+        <Foo />
       </body>
     </html>
   );

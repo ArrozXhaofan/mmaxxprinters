@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 import { Catacartas } from "./models";
 import { CataCard } from "@/components";
-
+import {Bloque} from "@/components";
 import { useEffect } from "react";
 
 function Catalogo() {
@@ -17,7 +17,12 @@ function Catalogo() {
   
 
   return (
-    <div>
+    <div className="relative overflow-hidden min-h-screen">
+
+      <div className="absolute right-0 h-[1100px] w-[1100px] -z-20 rotate-[110deg] translate-x-[800px] md:translate-x-[500px]">
+        <Bloque />
+      </div>
+
       <div>
         <h1 className="text-xl text-primary font-bold md:text-3xl xl:text-4xl ">
           ¿QUES ESTAS BUSCANDO?

@@ -1,15 +1,26 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { FaFacebook } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import { Bloque } from "@/components";
 
 function Contacto() {
   return (
-    <div className="">
+    <div className="relative">
+
+
+       <div className="absolute right-0 h-[1100px] w-[1100px] -z-20 rotate-[100deg] translate-x-[800px] md:translate-x-[500px]">
+        <Bloque />
+      </div>
+
+
       <div>
         <h1 className="text-center text-3xl md:text-6xl font-semibold pt-10">
           CONTACTO
         </h1>
       </div>
+
+     
+      
 
         <div className="h-[79vh] bg-opacity-30 flex flex-col lg:flex-row lg:pt-0 lg:justify-center lg:items-center">
           {/* CONTACT INFORMATION */}

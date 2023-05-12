@@ -1,7 +1,7 @@
 
-import Image from "next/image";
 import { Maquina2 } from "../../models";
-import { Icono } from "@/components";
+import { Icono,Bloque } from "@/components";
+import Image from "next/image";
 
 
 async function getMaquinas(id: string): Promise<Maquina2> {
@@ -20,7 +20,12 @@ async function Ecosolventeid({ params }: { params: { id: string } })
 
 
   return (
-    <div className="text-base md:text-lg  px-4">
+    <div className="text-base md:text-lg px-4 overflow-hidden relative">
+
+    <div className="absolute right-0 h-[1100px] w-[1100px] -z-20 rotate-[100deg] translate-x-[900px] md:translate-x-[500px]
+     -translate-y-[340px]">
+            <Bloque />
+          </div> 
     <div className="pt-6">
       <h1 className="text-2xl md:text-4xl font-semibold text-primary">
         {`${maquina.MODELO} - ${maquina.CATEGORIA}`}
@@ -46,8 +51,8 @@ async function Ecosolventeid({ params }: { params: { id: string } })
     </div>
 
     <div className="py-20 flex justify-center items-center ">
-      <div className="border border-primary rounded-xl w-full flex justify-center items-center md:w-3/4 h-24
-        lg:w-1/2">
+    <div className="border border-primary rounded-xl w-full flex justify-center items-center md:w-3/4 h-24
+        lg:w-1/2 bg-white bg-opacity-60 backdrop-blur-sm">
       <table
       className="w-full text-center font-semibold
        ">

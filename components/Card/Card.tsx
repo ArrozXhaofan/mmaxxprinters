@@ -11,7 +11,7 @@ interface Props{
   const categoria = data.categoria ? data.categoria.toLowerCase() : '';
 
   return (
-    <div className="flex flex-col gap-3 items-center justify-center p-3 border border-primary rounded-xl">
+    <div className="flex flex-col gap-3 items-center justify-center p-3 border border-primary rounded-xl bg-white bg-opacity-60 backdrop-blur">
         <p className="text-xl text-primary">{data.modelo}</p>
         <Image src={data.imagen} width={300} height={150} alt="Printer" className="h-28 object-contain"
         priority
