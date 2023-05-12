@@ -66,7 +66,7 @@ export default function Home() {
     ]
 
   return (
-    <div className="min-h-screen bg-orange-400 pb-20">
+    <div className="min-h-screen bg-orange-400 pb-20 overflow-hidden">
 
       <div>
         <div className="md:hidden">
