@@ -5,10 +5,10 @@ import { Bloque } from "@/components";
 
 function Contacto() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden min-h-screen">
 
 
-       <div className="absolute right-0 h-[1100px] w-[1100px] -z-20 rotate-[100deg] translate-x-[800px] md:translate-x-[500px]">
+       <div className="absolute right-0 h-[1100px] w-[1100px] -z-50 rotate-[100deg] translate-x-[800px] md:translate-x-[500px]">
         <Bloque />
       </div>
 
