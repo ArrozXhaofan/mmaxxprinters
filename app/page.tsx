@@ -198,7 +198,7 @@ export default function Home() {
       <div className="w-full bg-white flex flex-col md:flex-row gap-10 justify-center items-center py-10">
           {
             ecos.map(eco => (
-              <Card data={eco}/>
+              <Card key={eco.id} data={eco}/>
             ))
           }
       </div>
@@ -214,7 +214,7 @@ export default function Home() {
       <div className="w-full bg-white flex flex-col md:flex-row gap-10 justify-center items-center py-10">
           {
             dtfs.map(dtf => (
-              <Card data={dtf}/>
+              <Card key={dtf.id} data={dtf}/>
             ))
           }
       </div>
@@ -230,7 +230,7 @@ export default function Home() {
       <div className="w-full bg-white flex flex-col md:flex-row gap-10 justify-center items-center py-10">
           {
             sublis.map(subli => (
-              <Card data={subli}/>
+              <Card key={subli.id} data={subli}/>
             ))
           }
       </div>
