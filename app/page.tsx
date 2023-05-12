@@ -11,14 +11,62 @@ import grid1 from "../public/images/grid1.jpg";
 import grid2 from "../public/images/grid2.jpg";
 import grid3 from "../public/images/grid3.png";
 import grid4 from "../public/images/grid4.jpg";
+import { Card } from "@/components";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
   // 
+
+    const ecos = [
+      {
+        id: 1,
+        modelo: "1300 EX1",
+        imagen: "https://maxv2.apexmaicol.online/imagenes/img_producto/1300 EX1_1300.png",
+        categoria: "ECOSOLVENTE"
+      },
+      {
+        id: 2,
+        modelo: "ME - 1600 EX1-E",
+        imagen: "https://maxv2.apexmaicol.online/imagenes/img_producto/ME - 1600 EX1-E_1600.png",
+        categoria: "ECOSOLVENTE"
+      },
+    ]
+
+    const dtfs = [
+      {
+        id: 6,
+        modelo: "MD 700 EX2",
+        imagen: "https://maxv2.apexmaicol.online/imagenes/img_producto/MD 700 EX2_DTF700.png",
+        categoria: "DTF"
+      },
+      {
+        id: 7,
+        modelo: "MD 700 EX4",
+        imagen: "https://maxv2.apexmaicol.online/imagenes/img_producto/MD 700 EX4_DTF700.png",
+        categoria: "DTF"
+      }
+    ]
+
+    const sublis = [
+      {
+        id: 4,
+        modelo: "SL1800 E15",
+        imagen: "https://maxv2.apexmaicol.online/imagenes/img_producto/SL1800 E15_SL1800i E15.png",
+        categoria: "SUBLIMACION"
+      },
+      {
+        id: 5,
+        modelo: "SL1800I E8",
+        imagen: "https://maxv2.apexmaicol.online/imagenes/img_producto/SL1800I E8_SL1800i E8.png",
+        categoria: "SUBLIMACION"
+      }
+    ]
+
   return (
-    <div className="bg-orange-500 min-h-screen">
+    <div className="min-h-screen bg-orange-400 pb-20">
 
       <div>
         <div className="md:hidden">
@@ -122,7 +170,7 @@ export default function Home() {
           className="md:col-span-2 flex items-center justify-center bg-white py-9 px-10
             md:px-40"
         >
-          <p className="text-center text-lg md:text-xl xl:text-4xl">
+          <p className="text-center text-lg md:text-xl xl:text-2xl">
             Máquinas gigantográficas de alta precisión para una producción de
             calidad
           </p>
@@ -133,10 +181,64 @@ export default function Home() {
       <hr />
 
       <div className="p-10 flex justify-center items-center">
-        <span className="bg-black white text-white font-bold px-8 py-2 text-xl rounded-full">
-          CATÁLOGO
-        </span>
+        <Link href={'/catalogo'} 
+        className="bg-black white text-white font-semibold px-8 py-2 text-md rounded-full text-center">
+          {`VER TODO EL CATALOGO >`}
+        </Link>
       </div>
+
+      <div className="flex items-center justify-center py-10">
+        <hr className="border-2 w-full" />
+        <span className="text-primary bg-white rounded-full px-10 py-2 font-semibold text-lg md:text-xl xl:text-2xl">
+          ECOSOLVENTES
+        </span>
+        <hr className="border-2 w-full" />
+      </div>
+
+      <div className="w-full bg-white flex flex-col md:flex-row gap-10 justify-center items-center py-10">
+          {
+            ecos.map(eco => (
+              <Card data={eco}/>
+            ))
+          }
+      </div>
+
+      <div className="flex items-center justify-center py-10">
+        <hr className="border-2 w-full" />
+        <span className="text-primary bg-white rounded-full px-10 py-2 font-semibold text-lg md:text-xl xl:text-2xl">
+          DTF
+        </span>
+        <hr className="border-2 w-full" />
+      </div>
+
+      <div className="w-full bg-white flex flex-col md:flex-row gap-10 justify-center items-center py-10">
+          {
+            dtfs.map(dtf => (
+              <Card data={dtf}/>
+            ))
+          }
+      </div>
+
+      <div className="flex items-center justify-center py-10">
+        <hr className="border-2 w-full" />
+        <span className="text-primary bg-white rounded-full px-10 py-2 font-semibold text-lg md:text-xl xl:text-2xl">
+          SUBLIMACIÓN
+        </span>
+        <hr className="border-2 w-full" />
+      </div>
+
+      <div className="w-full bg-white flex flex-col md:flex-row gap-10 justify-center items-center py-10">
+          {
+            sublis.map(subli => (
+              <Card data={subli}/>
+            ))
+          }
+      </div>
+
+
+
+
+
     </div>
   );
 }

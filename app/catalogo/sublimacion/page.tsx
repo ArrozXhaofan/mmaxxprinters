@@ -19,7 +19,7 @@ async function Sublimacion() {
         SUBLIMADORAS
       </h1>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 pt-10 flex-wrap">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 py-10 flex-wrap">
         
        {
         maquinas.map(maquina => (
@@ -27,26 +27,6 @@ async function Sublimacion() {
         ))
        }
          
-         {
-        maquinas.map(maquina => (
-          <Card key={maquina.id} data={maquina} />
-        ))
-       }
-
-         
-{
-        maquinas.map(maquina => (
-          <Card key={maquina.id} data={maquina} />
-        ))
-       }
-
-         
-{
-        maquinas.map(maquina => (
-          <Card key={maquina.id} data={maquina} />
-        ))
-       }
-        
       </div>
 
     </div>
