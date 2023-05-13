@@ -61,10 +61,10 @@ function Contacto() {
             </div>
           </div>
           {/* MAPS */}
-          <div className="h-1/2 rounded-xl overflow-hidden flex justify-center items-center lg:pl-10">
+          <div className="h-1/2 px-5 rounded-xl overflow-hidden flex justify-center items-center lg:pl-10">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.2618841915946!2d-77.03628735365162!3d-12.054178469966438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c7b16b280f%3A0x72f7a132935900c7!2sJr.%20Pachitea%20126%2C%20Lima%2015001!5e0!3m2!1ses!2spe!4v1683329996461!5m2!1ses!2spe"
-              className="h-full w-full md:h-3/4 md:w-3/4 lg:h-[300px] lg:w-[500px] "
+              className="h-full w-full md:h-3/4 md:w-3/4 lg:h-[300px] lg:w-[500px] rounded-xl"
             ></iframe>
           </div>
         </div>
