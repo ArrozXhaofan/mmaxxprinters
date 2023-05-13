@@ -1,4 +1,4 @@
-import { Foo, Nav, Bloque } from "@/components";
+import { Foo, Nav } from "@/components";
 import "./globals.css";
 import { Rutas } from "@/models";
 
