@@ -124,7 +124,7 @@ async function Sublimacionid({params}:{params:{id:string}}) {
     <div className="flex items-center justify-center pb-20">
       <a href="https://wa.me/+51994099669" target="_blank"
       className="bg-[#F39325] text-white font-semibold text-lg px-10 py-3 rounded-lg border
-      hover:bg-white hover:text-[#F39325] duration-300 hover:scale-110 hover:border-[#F39325]">
+      hover:bg-white hover:text-[#F39325] duration-300 hover:scale-110 hover:border-[#F39325] text-center">
         Contacte con un vendedor
       </a>
     </div>
