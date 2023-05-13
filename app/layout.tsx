@@ -3,7 +3,7 @@ import "./globals.css";
 import { Rutas } from "@/models";
 
 export const metadata = {
-  title: "MMAXX PRINTERS",
+  title: "MMAXX Printers",
   description: "Sitio web de MMAXX PRINTERS",
 };
 
@@ -15,6 +15,9 @@ export default function RootLayout({
   // bg-[url('/images/fondo.jpg')]
   return (
     <html lang="es">
+      <head>
+        <link rel="icon" href="maxIcon.png"  />
+      </head>
       <body className="relative font-monse">
 
         <Nav pathNames={[Rutas.HOME, Rutas.CATALOGO, Rutas.CONTACTO]} />
